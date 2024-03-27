@@ -43,7 +43,7 @@ export default function Countdown() {
 
   return (
     <div className="p-4 bg-gradient-to-b from-[#000] via-[#011] to-black min-h-[200px]">
-      <div className="w-full max-w-5xl mx-auto flex items-center ">
+      <div className="w-full max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 items-center ">
         <CountdownItem num={remaining.days} text="يوما" />
         <CountdownItem num={remaining.hours} text="ساعة" />
         <CountdownItem num={remaining.minutes} text="دقيقة" />
@@ -55,11 +55,9 @@ export default function Countdown() {
 
 function CountdownItem({ num, text }: { num: number; text: string }) {
   return (
-    <div className="font-mono w-1/4 h-24 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center">
-      <span className="text-xs md:text-sm lg:text-base font-light text-slate-400">
-        {text}
-      </span>
-      <div className="w-full text-center relative overflow-hidden font-[400]">
+    <div className="font-mono w-1/4 h-24 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center mx-auto ">
+      <span className="text-base font-light text-slate-400">{text}</span>
+      <div className="w-full text-center relative  font-[400]">
         <AnimatePresence mode="popLayout">
           <motion.span
             key={num}
@@ -67,7 +65,7 @@ function CountdownItem({ num, text }: { num: number; text: string }) {
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
             transition={{ ease: "backIn", duration: 0.75 }}
-            className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 text-2xl md:text-4xl lg:text-6xl xl:text-7xl text-black font-medium"
+            className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 text-4xl lg:text-6xl font-medium"
           >
             {num}
           </motion.span>
