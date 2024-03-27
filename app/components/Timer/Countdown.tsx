@@ -57,7 +57,7 @@ export default function Countdown() {
 
 function CountdownItem({ num, text }: { num: number; text: string }) {
   return (
-    <div className="w-3/5 h-24 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center mx-auto ">
+    <div className="w-[30%] xs:w-[36%] sm:w-[18%] md:w-[16%] lg:w-[38%] h-24 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center mx-auto ">
       <span className="text-base font-light text-slate-400">{text}</span>
       <div className="w-full text-center relative  font-bold overflow-hidden font-mono">
         <AnimatePresence mode="popLayout">
