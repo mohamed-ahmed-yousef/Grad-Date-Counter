@@ -1,10 +1,12 @@
 import Image from "next/image";
-import CountdownTimer from "./components/Timer/TimerLogic";
+import Footer from "./components/Footer";
+import Timer from "./components/Timer";
 
 export default function Home() {
   return (
-    <main className="">
-      <CountdownTimer />
+    <main className=" h-screen">
+      <Timer />
+      <Footer />
     </main>
   );
 }
