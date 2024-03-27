@@ -18,7 +18,9 @@ export default function Countdown() {
   });
 
   useEffect(() => {
-    setInterval(handleCountdown, 1000);
+    const interval = setInterval(handleCountdown, 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
   const handleCountdown = () => {
