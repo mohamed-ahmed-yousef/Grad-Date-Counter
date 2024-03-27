@@ -57,9 +57,9 @@ export default function Countdown() {
 
 function CountdownItem({ num, text }: { num: number; text: string }) {
   return (
-    <div className="font-mono  h-24 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center mx-auto ">
+    <div className="w-3/5 h-24 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center mx-auto ">
       <span className="text-base font-light text-slate-400">{text}</span>
-      <div className="w-full text-center relative  font-[400] overflow-hidden">
+      <div className="w-full text-center relative  font-bold overflow-hidden font-mono">
         <AnimatePresence mode="popLayout">
           <motion.span
             key={num}
@@ -67,7 +67,7 @@ function CountdownItem({ num, text }: { num: number; text: string }) {
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
             transition={{ ease: "backIn", duration: 0.75 }}
-            className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400   text-4xl lg:text-6xl font-medium"
+            className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400  text-lg xxs:text-xl xs:text-4xl lg:text-6xl font-medium"
           >
             {num}
           </motion.span>

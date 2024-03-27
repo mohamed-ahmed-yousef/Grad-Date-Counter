@@ -35,6 +35,10 @@ const config: Config = {
         destructiveForeground: "hsl(var(--destructive-foreground))",
         ring: "hsl(var(--ring))",
       },
+      screens: {
+        xxs: "240px",
+        xs: "350px",
+      },
     },
   },
   plugins: [],
