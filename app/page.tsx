@@ -4,7 +4,7 @@ import Timer from "./components/Timer";
 
 export default function Home() {
   return (
-    <main className=" h-screen">
+    <main className="flex flex-col absolute min-h-full w-full">
       <Timer />
       <Footer />
     </main>
