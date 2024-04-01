@@ -7,7 +7,7 @@ export default function Footer() {
             العلم يرفع بيتا لا عماد له، والجهل يهدم بيت العز والشرف
           </p>
           <p className="text-sm md:text-base">
-            كليه النهدسة - قسم الحاسبات والمنظومات - 2024
+            كليه الهندسة - قسم الحاسبات والمنظومات - 2024
           </p>
           <p className="md:text-xs lg:text-sm hidden sm:block text-sm">
             لا تحسبن العلم ينفع وحده ما لم يتوج ربه بخلاق
