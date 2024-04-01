@@ -7,10 +7,8 @@ export default function Timer() {
       <div className="relative flex  justify-center">
         <Image
           priority
-          src={Faculty.src}
+          src={Faculty}
           alt="faculty"
-          width={100}
-          height={100}
           className="w-[100vw] h-[calc(100vh-250px)] object-cover"
         />
         <p className="absolute bottom-16  text-slate-50 text-3xl">
