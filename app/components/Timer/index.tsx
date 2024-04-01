@@ -6,6 +6,7 @@ export default function Timer() {
     <div className="">
       <div className="relative flex  justify-center">
         <Image
+          priority
           src={Faculty.src}
           alt="faculty"
           width={100}

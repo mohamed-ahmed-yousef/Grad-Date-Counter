@@ -10,6 +10,5 @@ pre-commit:
       glob: "*.{js,ts,jsx,tsx}"
       run: "npx biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && git update-index --again"
     prettier:
-      glob: "*.{js,ts,jsx,tsx, json}"
+      glob: "*.{js,ts,jsx,tsx,json,css,scss,sass,yaml,yml}"
       run: "npx prettier -w {staged_files} && git update-index --again"
-
