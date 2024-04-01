@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import { Rakkas } from "next/font/google";
+import { Handjet, Rakkas } from "next/font/google";
 import "./globals.css";
 
 const rakkas = Rakkas({
   subsets: ["latin"],
   weight: "400",
+  variable: "--font-rakkas",
+});
+
+const handjet = Handjet({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-handjet",
 });
 
 export const metadata: Metadata = {
@@ -17,9 +24,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log(rakkas.variable);
   return (
-    <html lang="en">
-      <body className={rakkas.className}>{children}</body>
+    <html
+      dir="rtl"
+      lang="ar"
+      className={`${rakkas.variable} ${handjet.variable} font-rakkas`}
+    >
+      <body>{children}</body>
     </html>
   );
 }

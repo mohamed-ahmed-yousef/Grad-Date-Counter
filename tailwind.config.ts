@@ -39,6 +39,10 @@ const config: Config = {
         xxs: "240px",
         xs: "350px",
       },
+      fontFamily: {
+        rakkas: ["var(--font-rakkas)"],
+        handjet: ["var(--font-handjet)"],
+      },
     },
   },
   plugins: [],
