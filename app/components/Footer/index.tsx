@@ -23,10 +23,10 @@ export default function Footer() {
   
         @keyframes slide {
           from {
-            right: -100%;
+            right: 100%;
           }
           to {
-            right: 100%;
+            right: -100%;
           }
         }
         `}
